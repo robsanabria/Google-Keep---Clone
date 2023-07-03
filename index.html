@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notas - Google Keep</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="google-keep.png">
+    </head>
+<body>
+    <header>
+        <h1>Notas</h1>
+    </header>
+    <main>
+    </main>
+    <button id="add-button" class="floating-btn">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <!-- Ventana modal para agregar una nueva nota -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agregar Nueva Nota</h2>
+            <form id="note-form">
+                <label for="note-title">Título:</label>
+                <input type="text" id="note-title" required>
+
+                <label for="note-content">Contenido:</label>
+                <textarea id="note-content" required></textarea>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
